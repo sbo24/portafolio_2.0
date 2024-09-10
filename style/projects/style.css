@@ -1,0 +1,180 @@
+/* Centra las tarjetas en el contenedor */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajusta el ancho de las tarjetas y centra el contenido */
+.project-card {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 0.25rem;
+
+}
+
+ @keyframes neon {
+
+     0%,
+     100% {
+         filter: drop-shadow(0 0 1px #f00) drop-shadow(0 0 6px #f00) drop-shadow(0 0 8px #f00);
+     }
+
+     50% {
+         filter: drop-shadow(0 0 6px #f00) drop-shadow(0 0 12px #f00) drop-shadow(0 0 18px #f00);
+     }
+ }
+
+ .neon {
+     animation: neon 2s ease-in-out infinite;
+ }
+
+  @keyframes neon-yellow {
+
+      0%,
+      100% {
+          filter: drop-shadow(0 0 1px #ff0) drop-shadow(0 0 6px #ff0) drop-shadow(0 0 8px #ff0);
+      }
+
+      50% {
+          filter: drop-shadow(0 0 6px #ff0) drop-shadow(0 0 12px #ff0) drop-shadow(0 0 18px #ff0);
+      }
+  }
+
+  .neon-yellow {
+      animation: neon-yellow 2s ease-in-out infinite;
+  }
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilos para los badges de lenguajes */
+.card-languages .badge {
+    margin: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.card-languages .badge i {
+    margin-right: 0.5rem;
+}
+
+/* Animación del botón */
+.btn-animated {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.4s, background-color 0.4s, box-shadow 0.4s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.btn-animated::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0;
+}
+
+.btn-animated:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btn-animated:hover {
+    background-color: #0056b3;
+    color: #f8f9fa;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-animated:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(38, 143, 255, 0.5);
+}
+
+.btn-animated:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.badge-php {
+    background-color: #7575b3;
+    color: #fff;
+}
+
+.badge-html {
+    background-color: #e34f26;
+    color: #fff;
+}
+
+.badge-css {
+    background-color: #1572b6;
+    color: #fff;
+}
+
+.badge-laravel {
+    background-color: #ff2d20;
+    color: #fff;
+}
+
+.badge-sql {
+    background-color: #003b57;
+    color: #fff;
+}
+
+.badge-postman {
+    background-color: #f76935;
+    color: #fff;
+}
+
+.badge-api {
+    background-color: #333;
+    color: #fff;
+}
+
+.badge-react {
+    background-color: #61dafb;
+    color: #000;
+}
+
+.badge-cloud {
+    background-color: #00aaff;
+    color: #fff;
+}
+
+.badge-bootstrap {
+    background-color: #563d7c;
+    color: #fff;
+}
+
+.badge-yellow {
+    background-color: #f1c40f;
+    color: #000;
+}

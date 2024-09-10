@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style/nav/style.css">
     <link rel="stylesheet" href="style/about/style.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/projects/style.css">
+
 </head>
 
 <body>
@@ -170,41 +172,86 @@
     <!-- Projects Section -->
     <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title">Proyectos</h2>
+            <h2 class="section-title text-center mb-5">Proyectos</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 1</h5>
-                            <p class="card-text">Descripción breve del proyecto 1.</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                <!-- Proyecto 1 -->
+                <div class="col-md-12 mb-4 d-flex justify-content-center">
+                    <div class="card project-card shadow-lg rounded-lg">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="img/TFG.png" class="img-fluid rounded-left neon"
+                                    style="max-width: 150px; height: auto;" alt="Proyecto 1">
+                            </div>
+    
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sistema de Gestión de Coches</h5>
+                                    <p class="card-text">Este sistema permite consultar fichas técnicas de coches y
+                                        gestionar mantenimientos. Desarrollado completamente desde cero con PHP,
+                                        Laravel, SQL, y otras tecnologías web.</p>
+                                    <p class="card-languages">
+                                        <span class="badge badge-php"><i class="fab fa-php"></i> PHP</span>
+                                        <span class="badge badge-html"><i class="fab fa-html5"></i> HTML</span>
+                                        <span class="badge badge-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                                        <span class="badge badge-laravel"><i class="fab fa-laravel"></i> Laravel</span>
+                                        <span class="badge badge-sql"><i class="fas fa-database"></i> SQL</span>
+                                        <span class="badge badge-postman"><i class="fas fa-clipboard-list"></i>
+                                            Postman</span>
+                                        <span class="badge badge-api"><i class="fas fa-network-wired"></i> API REST</span>
+                                    </p>
+                                    <div class="text-center">
+                                        <a href="https://github.com/sbo24/TFG-HIERODURO"
+                                            class="btn btn-primary btn-animated" target="_blank">
+                                            <i class="fab fa-github"></i> Ver en GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 2</h5>
-                            <p class="card-text">Descripción breve del proyecto 2.</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+    
+                <!-- Proyecto 2 -->
+                <div class="col-md-12 mb-4">
+                    <div class="card project-card shadow-lg rounded-lg">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="img/the_meal_db_api.png" class="img-fluid rounded-left neon-yellow"
+                                    style="max-width: 150px; height: auto;" alt="Proyecto 2">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">TheMealDB-React</h5>
+                                    <p class="card-text">Este proyecto utiliza React para conectarse a una API en la
+                                        nube y obtener
+                                        información de su base de datos, la cual se presenta en pantalla de manera
+                                        dinámica.</p>
+                                    <p class="card-languages">
+                                        <span class="badge badge-react"><i class="fab fa-react"></i> React</span>
+                                        <span class="badge badge-cloud"><i class="fas fa-cloud"></i> API en la nube</span>
+                                        <span class="badge badge-html"><i class="fab fa-html5"></i> HTML</span>
+                                        <span class="badge badge-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                                        <span class="badge badge-sql"><i class="fas fa-database"></i> SQL</span>
+                                        <span class="badge badge-bootstrap"><i class="fab fa-bootstrap"></i>
+                                            Bootstrap</span>
+                                    </p>
+                                    <div class="text-center">
+                                        <a href="https://github.com/Atablo/TheMealDB-React"
+                                            class="btn btn-primary btn-animated" target="_blank">
+                                            <i class="fab fa-github"></i> Ver en GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 3</h5>
-                            <p class="card-text">Descripción breve del proyecto 3.</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>
-                </div>
+    
             </div>
         </div>
     </section>
+
+
 
     <!-- Education Section -->
     <section id="education" class="py-5">
