@@ -1,0 +1,77 @@
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.about-text {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.skill-box {
+    position: relative;
+    padding: 1rem;
+}
+
+.skill-bar {
+    height: 14px;
+    background: #e0e4e8;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.skill-bar-inner {
+    height: 100%;
+    background: #3498db;
+    border-radius: 8px;
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+
+/* Animación */
+@keyframes loadAnimation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.skill-bar[data-skill] .skill-bar-inner {
+    animation: loadAnimation 2s ease-in-out forwards;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+.mr-2{
+    margin-right: 2%;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 2%;
+    border: 3px solid #3498db;
+}
