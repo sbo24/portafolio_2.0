@@ -1,0 +1,213 @@
+a {
+    text-decoration: none;
+    color: #1E90FF;
+    /* Azul brillante para enlaces */
+}
+
+a:hover {
+    background: #1E90FF;
+    /* Fondo de enlace al pasar el ratón */
+    color: #ffffff;
+    /* Color de texto al pasar el ratón */
+}
+
+.sticky {
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar--container {
+    top: 40%;
+    background: #ffffff;
+    /* Fondo del contenedor */
+    height: 180px;
+    width: 60px;
+    /* Ajustado para un diseño más balanceado */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra más suave */
+}
+
+.navbar--icon {
+    margin-top: auto;
+    margin-left: 24px;
+    /* Alineado para un mejor espaciado */
+    font-size: 1.5em;
+    /* Tamaño del icono aumentado para mayor visibilidad */
+    color: #1E90FF;
+    /* Color inicial del icono */
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transiciones suaves para color, transformación y sombra */
+}
+
+.navbar--icon:hover {
+    color: #014361;
+    /* Color del icono al pasar el ratón */
+    cursor: pointer;
+    
+}
+
+.navbar--title {
+    margin-left: auto;
+    margin-top: 40px;
+    /* Ajustado para un mejor espaciado */
+}
+
+.navbar--title h4 {
+    writing-mode: vertical-rl;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.25em;
+    /* Espaciado de letras ajustado */
+    text-transform: uppercase;
+    font-size: 1em;
+    /* Tamaño de fuente ajustado */
+    color: #333333;
+    /* Color de título */
+}
+
+.nav--open {
+    height: 100vh;
+    width: 320px;
+    /* Ancho ajustado para un mejor equilibrio */
+    background: #F0F8FF;
+    /* Fondo azul muy claro para contraste */
+    transition: all 0.4s ease-out;
+    opacity: 1;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra más suave */
+}
+
+.nav--open-icon {
+    text-align: right;
+    padding: 20px;
+}
+
+.nav--open-icon i {
+    font-size: 2em;
+    color: #1E90FF;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Color del icono en el menú abierto */
+}
+
+.nav--open-icon i:hover {
+    color: #FF4500;
+    /* Color del ícono al pasar el ratón */
+    transform: scale(1.2) rotate(10deg);
+    /* Aumenta el tamaño y rota el ícono ligeramente */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+}
+
+.nav--open-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    /* Tamaño de fuente ajustado */
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    /* Espaciado de letras ajustado */
+    text-align: center;
+    margin-top: 30%;
+    /* Ajustado para un mejor espaciado */
+    color: #333333;
+    /* Color del título en el menú abierto */
+}
+
+.nav--open-menu {
+    height: calc(100% - 80px);
+    /* Ajustado para dejar espacio para el título y el icono */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    /* Ajustado para un mejor espaciado */
+}
+
+.nav--open-menu a {
+    font-size: 1.8em;
+    /* Tamaño de fuente ajustado */
+    font-weight: 600;
+    /* Peso de fuente aumentado para mayor impacto */
+    padding: 15px 30px;
+    /* Espaciado interior más amplio */
+    color: #333333;
+    /* Texto en color estándar */
+    border-radius: 8px;
+    /* Bordes redondeados para un diseño más suave */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transiciones suaves para fondo, color, transformación y sombra */
+    display: inline-block;
+    /* Asegura que el padding se aplique correctamente */
+    text-decoration: none;
+    /* Elimina el subrayado predeterminado */
+}
+
+.about-link:hover {
+    background: #FF6347;
+    /* Color de fondo al pasar el ratón */
+    color: #ffffff;
+    /* Color del texto al pasar el ratón */
+    transform: translateY(-5px) scale(1.05);
+    /* Desplazamiento hacia arriba y aumento de tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    /* Sombra más pronunciada para un efecto de elevación */
+    font-weight: 700;
+    /* Aumenta el peso de la fuente para mayor énfasis */
+}
+
+.experience-link:hover {
+    background: #1E90FF;
+    /* Color de fondo al pasar el ratón */
+    color: #ffffff;
+    /* Color del texto al pasar el ratón */
+    transform: translateY(-5px) scale(1.05);
+    /* Desplazamiento hacia arriba y aumento de tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    /* Sombra más pronunciada para un efecto de elevación */
+    font-weight: 700;
+    /* Aumenta el peso de la fuente para mayor énfasis */
+}
+
+.education-link:hover {
+    background: #32CD32;
+    /* Color de fondo al pasar el ratón */
+    color: #ffffff;
+    /* Color del texto al pasar el ratón */
+    transform: translateY(-5px) scale(1.05);
+    /* Desplazamiento hacia arriba y aumento de tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    /* Sombra más pronunciada para un efecto de elevación */
+    font-weight: 700;
+    /* Aumenta el peso de la fuente para mayor énfasis */
+}
+
+.projects-link:hover {
+    background: #FFD700;
+    /* Color de fondo al pasar el ratón */
+    color: #ffffff;
+    /* Color del texto al pasar el ratón */
+    transform: translateY(-5px) scale(1.05);
+    /* Desplazamiento hacia arriba y aumento de tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    /* Sombra más pronunciada para un efecto de elevación */
+    font-weight: 700;
+    /* Aumenta el peso de la fuente para mayor énfasis */
+}
+
+.contact-link:hover {
+    background: #FF4500;
+    /* Color de fondo al pasar el ratón */
+    color: #ffffff;
+    /* Color del texto al pasar el ratón */
+    transform: translateY(-5px) scale(1.05);
+    /* Desplazamiento hacia arriba y aumento de tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    /* Sombra más pronunciada para un efecto de elevación */
+    font-weight: 700;
+    /* Aumenta el peso de la fuente para mayor énfasis */
+}
+
+.close {
+    transform: translateX(-320px);
+    /* Ajustado para el nuevo ancho */
+    transition: all 0.4s ease-out;
+    opacity: 0;
+}
