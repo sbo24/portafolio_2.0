@@ -92,12 +92,6 @@
     display: block;
 }
 
-/* Hover Effects */
-.timeline-content:hover {
-    background-color: #e9ecef;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
 
 .timeline-item::before:hover {
     background-color: #6610f2;
