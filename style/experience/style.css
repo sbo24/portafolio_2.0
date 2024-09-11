@@ -17,13 +17,11 @@
     transform: translateY(0);
 }
 
-/* Cambié el color de fondo e icono por colores más modernos */
 .experience-icon {
     flex-shrink: 0;
     width: 50px;
     height: 50px;
     background-color: #00a8c2;
-    /* Un tono coral moderno */
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -33,37 +31,28 @@
     font-size: 1.5rem;
 }
 
-/* Cambié el fondo por un tono gris claro y el borde por un color suave */
 .experience-content {
     background-color: #f9f9f9;
-    /* Color de fondo claro */
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* Incrementa un poco la sombra */
     border-left: 4px solid #0c61ff;
-    /* Bordes del mismo color que los iconos */
 }
 
-/* Cambié el color del título a un gris oscuro */
 .experience-title {
     margin: 0;
     font-size: 1.25rem;
     color: #333;
-    /* Gris oscuro */
 }
 
-/* Cambié el color de la compañía a un tono más suave */
 .experience-company {
     font-weight: bold;
     color: #014864;
     margin: 0.5rem 0;
 }
 
-/* Cambié el color de la descripción a un gris más claro */
 .experience-description {
     margin: 0;
     font-size: 0.9rem;
     color: #666;
-    /* Gris claro para contraste */
 }

@@ -55,5 +55,7 @@ input:checked+.slider:before {
     /* "Luna" */
 }
 
-
-
+*.light-mode {
+background: linear-gradient(135deg, #1e1e1e, #121212);
+ 
+}
