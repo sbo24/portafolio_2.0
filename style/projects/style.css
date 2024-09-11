@@ -178,3 +178,12 @@
     background-color: #f1c40f;
     color: #000;
 }
+
+
+@media (max-width: 576px) {
+    .img-mobile-spacing {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        /* Ajusta según lo que necesites */
+    }
+}
